@@ -1,0 +1,7 @@
+controllers:
+    resource: ../src/Controller/
+    type: attribute
+
+index:
+    path: /proveedores
+    controller: App\Controller\ProveedoresController::getProveedores

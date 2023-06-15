@@ -1,0 +1,39 @@
+{% extends 'universal.html.twig' %}
+
+{% block title %}Proveedores{% endblock %}
+
+{% block contenido %}
+    
+
+
+    <h1>Todos los Proveedores</h1>
+    
+    <a class="añadir btn btn-primary col-2" href="{{ url('proveedor', { id:1 } ) }}">Añadir Nuevo</a>
+    <ul>
+        <li class="col-6">
+            <h3>Nombre: </h3>
+            <h5>Correo electrónico:</h5>
+            <h5>Teléfono:</h5>
+            <h5>Tipo de proveedor:</h5>
+            <h5>Activo:</h5>
+            <a class="btn btn-primary" href="{{ url('proveedor', { id:1 } ) }}">Entrar</a>
+            <a class="btn btn-secondary" href="{{ url('proveedor', { id:2 } ) }}">Modificar</a>
+            <a class="btn btn-danger"href="{{ url('proveedor', { id:3 } ) }}">Eliminar</a>
+        </li>
+
+        <li class="col-6">
+            <h3>Nombre: </h3>
+            <h5>Correo electrónico:</h5>
+            <h5>Teléfono:</h5>
+            <h5>Tipo de proveedor:</h5>
+            <h5>Activo:</h5>
+<a class="btn btn-primary" href="{{ url('proveedor', { id:1 } ) }}">Entrar</a>
+            <a class="btn btn-secondary" href="{{ url('proveedor', { id:2 } ) }}">Modificar</a>
+            <a class="btn btn-danger"href="{{ url('proveedor', { id:3 } ) }}">Eliminar</a>
+        </li>
+        
+        
+        
+    </ul>
+
+    {% endblock %}

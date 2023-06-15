@@ -1,0 +1,38 @@
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/style.css">
+
+
+<body>
+    <header>
+            Control de Proveedores
+    </header>
+        <div class="singular">
+        <a class="btn btn-secondary" href="../proveedores">Atras</a>
+            <h1>Proveedor ID: {{ idProveedor }}</h1>
+        <ul>
+                <li class="col-6">
+                    <h3>Nombre:{{nombre}}</h3>
+                    <h4>Correo electrónico:</h4>
+                    <h4>Teléfono:</h4>
+                    <h4>Tipo de proveedor:</h4>
+                    <h4>Activo:</h4>
+                    <a class="btn btn-secondary" href="{{ url('proveedor', { id:2 } ) }}">Modificar</a>
+                    <a class="btn btn-danger"href="{{ url('proveedor', { id:3 } ) }}">Eliminar</a>
+            
+                </li>
+            </ul>
+        </div>
+        
+        
+    
+    <footer>
+        Aviso Legal
+    </footer>
+</body>
+</html>
+
+   
